@@ -1,0 +1,38 @@
+.tabs__header {
+    display: flex;
+    gap: 35px;
+    max-width: 100%;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tabs__header button {
+    color: #aaa;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #24d08c;
+        box-shadow: 0 0 2px 0.1px #24d08c;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    &.active, &:hover {
+        color: #fff;
+
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}

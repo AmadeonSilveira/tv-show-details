@@ -6,11 +6,26 @@ html, body, #root {
     height: 100%;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
-button, input {
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
     font: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
 }
