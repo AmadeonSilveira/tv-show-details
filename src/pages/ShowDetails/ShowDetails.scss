@@ -46,6 +46,7 @@
 .show-details__infos {
   padding: 15px 30px;
   min-height: 20vh;
+  position: relative;
 }
 
 .show-details__infos-item {
@@ -271,5 +272,18 @@
   }
   @media screen and (max-width: 686px) {
     max-width: 100%;
+  }
+}
+
+.show-details__infos-producer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+
+  @media screen and (max-width: 686px) {
+    position: relative;
+    margin: 0 auto;
   }
 }

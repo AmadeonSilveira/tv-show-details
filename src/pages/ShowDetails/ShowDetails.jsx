@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { getShowDetails, getShowEpisodes } from "../../services/api";
-import "./ShowDetails.scss";
 import Loading from "../../components/Loading/Loading";
 import TabsHeader from "../../components/TabsHeader/TabsHeader";
 import { FaFaceFrown, FaCirclePlus, FaRecordVinyl, FaSquareShareNodes, FaCirclePlay } from "react-icons/fa6";
+import producer from '../../assets/telecine-logo.png';
+import "./ShowDetails.scss";
 
 export default function ShowDetails() {
   const [show, setShow] = useState(null);
@@ -134,6 +135,10 @@ export default function ShowDetails() {
               <p>Informações de prêmios não disponíveis</p>
             </div>
           )}
+        </div>
+
+        <div className="show-details__infos-producer">
+          <img src={producer} alt="Logo/marca da produtora da série" />
         </div>
       </div>
     </div>

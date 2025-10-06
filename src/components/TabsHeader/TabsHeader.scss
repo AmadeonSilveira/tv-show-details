@@ -12,6 +12,7 @@
     padding-bottom: 10px;
     letter-spacing: 1px;
     cursor: pointer;
+    white-space: nowrap;
     transition: color 0.3s ease-in-out;
     
     &::after {
